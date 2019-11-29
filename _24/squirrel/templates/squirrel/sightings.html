@@ -1,0 +1,8 @@
+
+    <ul >
+	    <li><a href="/sightings/add/">Create New Sighting</a></li>	    
+    {% for item in s %}
+    <li><a href="/sightings/{{ item.unique_squirrel_id}}/">{{item.unique_squirrel_id}}</a></li>
+    {% endfor %}
+    </ul>
+
